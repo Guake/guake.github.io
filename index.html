@@ -29,7 +29,7 @@
       <nav role="navigation" class="navbar navbar-custom navbar-fixed-top">
         <div class="container">
           <div class="navbar-header page-scroll">
-            <button data-target=".navbar-main-collapse" data-toggle="collapse" type="button" class="navbar-toggle"><i class="fa fa-bars"></i></button><a href="#page-top" class="navbar-brand"><img src="img/guake.png" class="img-icon"><span class="light visible-md-inline visible-lg-inline">Guake Terminal</span></a>
+            <button type="button" data-toggle="collapse" data-target=".navbar-main-collapse" class="navbar-toggle"><i class="fa fa-bars"></i></button><a href="#page-top" class="navbar-brand"><img src="img/guake.png" class="img-icon"><span class="light visible-md-inline visible-lg-inline">Guake Terminal</span></a>
           </div>
           <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
             <ul class="nav navbar-nav">
@@ -38,9 +38,9 @@
               <li class="page-scroll"><a href="#firstlook">First Look</a></li>
               <li class="page-scroll"><a href="#more">Features</a></li>
               <li class="page-scroll"><a href="#sources">Source code</a></li>
+              <li class="page-scroll"><a href="#about">About</a></li>
             </ul>
           </div>
-          <li class="page-scroll"><a href="#about">About</a></li>
         </div>
       </nav>
       <div class="github-ribbon"><a href="https://github.com/Guake/guake"><img src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" class="github-ribbon-top"></a></div>
@@ -48,11 +48,11 @@
         <div class="intro-body"><img src="img/intro.jpg" class="hidden-img-intro">
         </div>
       </section>
-      <div id="overview-carousel" data-interval="3000" data-ride="carousel" class="carousel slide">
+      <div id="overview-carousel" data-ride="carousel" data-interval="3000" class="carousel slide">
         <ol class="carousel-indicators">
-          <li data-slide-to="0" data-target="#overview-carousel" class="active"></li>
-          <li data-slide-to="1" data-target="#overview-carousel"></li>
-          <li data-slide-to="2" data-target="#overview-carousel"></li>
+          <li data-target="#overview-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#overview-carousel" data-slide-to="1"></li>
+          <li data-target="#overview-carousel" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
           <div role="listbox" class="item active">
@@ -73,7 +73,7 @@
               <p>Switch back and forth between your contexts</p>
             </div>
           </div>
-        </div><a data-slide="prev" href="#overview-carousel" role="button" class="left carousel-control"><span class="glyphicon glyphicon-chevron-left"></span></a><a data-slide="next" href="#overview-carousel" role="button" class="right carousel-control"><span class="glyphicon glyphicon-chevron-right"></span></a>
+        </div><a href="#overview-carousel" role="button" data-slide="prev" class="left carousel-control"><span class="glyphicon glyphicon-chevron-left"></span></a><a href="#overview-carousel" role="button" data-slide="next" class="right carousel-control"><span class="glyphicon glyphicon-chevron-right"></span></a>
       </div>
       <section id="what" class="slide">
         <div class="container">
@@ -81,7 +81,7 @@
             <div class="col-lg-8 col-lg-offset-2">
               <h1 data-animation="space-in" class="animate-in">Discover Guake Terminal</h1>
               <p data-animation="fade-in" data-build="1" class="animate-build">
-                Guake is a top-down terminal for Gnome, and is highly inspirated by the famous
+                Guake is a multilingual, top-down terminal for Gnome, and is highly inspirated by the famous
                 terminal used in Quake <i class="glyphicon glyphicon-copyright-mark"></i>.
               </p>
               <p data-animation="fade-in" data-build="2" class="animate-build">
@@ -176,10 +176,6 @@
                 Start Guake automatically at login, and define a script that will be
                 executed on Guake launch, in order to configure Guake tabs.
               </p>
-              <p>
-                This is temporary solution waiting for the
-                <a href="https://github.com/Guake/guake/issues/114">save session feature</a>.
-              </p>
             </div>
             <div class="col-xs-12 col-sm-4">
               <h3>Plenty of Color palettes</h3>
@@ -227,6 +223,10 @@
                 Want a feature for Guake? Contributions are welcome! Guake is mainly
                 developed in the Python language, and uses the GTK-2 binding.
                 Don't hesitate to submit your Pull Request!
+                If you are not a developer, you can still contribute to Guake by translating
+                or improving its translations in <a href="https://hosted.weblate.org/projects/guake/guake/>your language</a>.
+                Guake users are welcome to <a href="https://weblate.org/donate/>support Weblate</a>
+                in providing this service for free for OpenSource Projects.
               </p>
               <ul class="list-inline banner-social-buttons">
                 <li><a href="https://github.com/Guake/guake/" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i><span class="network-name">Visit the Github project page</span></a></li>
@@ -242,10 +242,12 @@
               <h1 data-animation="space-in" data-build="1" class="animate-in">About the Guake Project</h1>
               <p data-animation="fade-in" data-build="2" class="animate-build">
                 Guake was originally written by Gabriel Falcão in 2007, and has since become
-                a vibrant open source project with <a href="https://github.com/Guake/guake/g
+                a vibrant open source project with
+                <a href="https://github.com/Guake/guake/graphs/contributors">many contributors</a>
+                .
               </p>
             </div>
-          </div>raphs/contributors">many contributors</a>.
+          </div>
         </div>
         <div class="page-scroll">
           <div id="sources-hook"></div><a href="#top" class="btn btn-circle"><i class="fa fa-angle-double-up animated"></i></a>
